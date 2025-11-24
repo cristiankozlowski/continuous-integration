@@ -10,4 +10,8 @@ class UserController extends Controller
     {
         return User::all();
     }
+
+    public function show($id){
+        return User::findOrFail($id);
+    }
 }
